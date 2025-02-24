@@ -33,6 +33,8 @@ body:
     attributes:
       label: What version of Python are you running Phoenix with?
       placeholder: e.g. 3.13, Cloud
+    validations:
+      required: true
   - type: input
     id: instrumentation-runtime
     attributes:
