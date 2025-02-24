@@ -17,16 +17,21 @@ body:
     id: version
     attributes:
       label: What version of Phoenix are you using?
-      placeholder: e.g. 8.0.0
+      placeholder: e.g. 8.0.0, Cloud
     validations:
       required: true
   - type: input
     id: operating-system
     attributes:
       label: What operating system are you seeing the problem on?
-      placeholder: e.g. macOS, Windows, Linux
+      placeholder: e.g. macOS, Windows, Linux, Cloud
     validations:
       required: true
+  - type: input
+    id: python-version
+    attributes:
+      label: What version of Python are you running Phoenix with?
+      placeholder: e.g. 3.13, Cloud
   - type: input
     id: instrumentation-runtime
     attributes:
