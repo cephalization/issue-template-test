@@ -8,10 +8,11 @@ body:
     attributes:
       label: Where do you use Phoenix
       options:
-        - Phoenix Cloud (app.phoenix.arize.com)
         - Local (self-hosted)
+        - Phoenix Cloud (app.phoenix.arize.com)
         - Container (self-hosted)
         - Notebook (Jupyter, Colab, etc)
+      default: 0
   - type: input
     id: version
     attributes:
@@ -31,6 +32,7 @@ body:
     attributes:
       label: Where does your instrumentation run?
       placeholder: e.g. Python 3.13, Node v23
+      description: (If applicable)
   - type: textarea
     id: instrumentation
     attributes:
@@ -38,7 +40,7 @@ body:
       placeholder: |
         arize-phoenix-otel==0.8.0
         openinference-instrumentation-openai==0.1.21
-      description: Include package names, versions
+      description: (If applicable) Include package names, versions
   - type: textarea
     id: what-happened
     attributes:
