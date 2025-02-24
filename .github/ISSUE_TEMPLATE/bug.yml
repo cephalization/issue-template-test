@@ -11,6 +11,7 @@ body:
         - Phoenix Cloud (app.phoenix.arize.com)
         - Local (self-hosted)
         - Container (self-hosted)
+        - Notebook (Jupyter, Colab, etc)
   - type: input
     id: version
     attributes:
@@ -46,6 +47,13 @@ body:
     validations:
       required: true
   - type: textarea
+    id: expectation
+    attributes:
+      label: What did you expect to happen?
+      placeholder: Tell us what you want to see
+    validations:
+      required: true
+  - type: textarea
     id: reproduction-steps
     attributes:
       label: How can we reproduce the bug?
@@ -58,9 +66,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: expectation
+    id: additional-information
     attributes:
-      label: What did you expect to happen?
-      placeholder: Tell us what you want to see
-    validations:
-      required: true
+      label: How can we reproduce the bug?
+      description: Please include any code samples, screenshots, videos, or steps to reproduce the bug.
