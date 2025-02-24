@@ -44,8 +44,12 @@ body:
     attributes:
       label: What instrumentation are you using?
       placeholder: |
+        # Python
         arize-phoenix-otel==0.8.0
         openinference-instrumentation-openai==0.1.21
+        --- or ---
+        // JavaScript
+        "@arizeai/openinference-instrumentation-openai": "^2.0.0",
       description: (If applicable) Include package names, versions
   - type: textarea
     id: what-happened
