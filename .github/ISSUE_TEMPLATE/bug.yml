@@ -26,18 +26,19 @@ body:
       placeholder: e.g. macOS, Windows, Linux
     validations:
       required: true
-  - type: dropdown
-    id: browsers
+  - type: input
+    id: instrumentation-runtime
     attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-        - Other
-        - N/A (API/SDK issue)
+      label: Where does your instrumentation run?
+      placeholder: e.g. Python 3.13, Node v23
+  - type: textarea
+    id: instrumentation
+    attributes:
+      label: What instrumentation are you using?
+      placeholder: |
+        arize-phoenix-otel==0.8.0
+        openinference-instrumentation-openai==0.1.21
+      description: Include package names, versions
   - type: textarea
     id: what-happened
     attributes:
@@ -68,5 +69,5 @@ body:
   - type: textarea
     id: additional-information
     attributes:
-      label: How can we reproduce the bug?
-      description: Please include any code samples, screenshots, videos, or steps to reproduce the bug.
+      label: Additional information
+      description: Please include any additional information that can help us with your issue.
